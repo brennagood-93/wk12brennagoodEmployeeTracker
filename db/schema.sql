@@ -2,14 +2,14 @@ create database emptracker;
 use emptracker;
 create table department(
     id int auto_increment,
-    name varchar,
+    name varchar(20),
     primary key (id)
 );
 create table roles(
     id int auto_increment,
     title varchar,
     salary int,
-    department int,
+    department_id int,
     primary key (id)
 );
 create table employee(
